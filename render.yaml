@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: RDXRedeemBot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    repo: https://github.com/rdxbro900/RDXRedeemXBot
+    branch: main
+    autoDeploy: true
